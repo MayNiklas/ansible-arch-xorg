@@ -1,7 +1,7 @@
 ---
 # tasks file for ansible-arch-xorg
 
-- name: Run pacstrap - xorg
+- name: Make sure xorg packages are present
   pacman:
     name: '{{ item }}'
     state: present
@@ -11,7 +11,7 @@
     - xorg-apps
     - xorg-xinit
 
-- name: Write 00-keyboard.conf
+- name: Make sure 00-keyboard.conf is set to the german keyboard layout
   template:
     src: 00-keyboard.j2
     dest: /etc/X11/xorg.conf.d/00-keyboard.conf
