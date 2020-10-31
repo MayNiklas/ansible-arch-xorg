@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-xorg
+# tasks file for ansible-arch-xorg
 
 - name: Run pacstrap - xorg
   pacman:
