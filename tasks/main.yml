@@ -10,3 +10,11 @@
     - xorg-server
     - xorg-apps
     - xorg-xinit
+
+- name: Write 00-keyboard.conf
+  template:
+    src: 00-keyboard.j2
+    dest: /etc/X11/xorg.conf.d/00-keyboard.conf
+    owner: root
+    group: root
+    mode: 0644
