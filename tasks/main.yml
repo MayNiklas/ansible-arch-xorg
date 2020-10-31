@@ -1,2 +1,12 @@
 ---
 # tasks file for ansible-xorg
+
+- name: Run pacstrap - xorg
+  pacman:
+    name: '{{ item }}'
+    state: present
+  loop:
+    - xorg
+    - xorg-server
+    - xorg-apps
+    - xorg-xinit
