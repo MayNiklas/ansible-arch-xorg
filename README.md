@@ -1,7 +1,9 @@
 Role Name
 =========
+[![Build Status](https://travis-ci.com/MayNiklas/ansible-arch-xorg.svg?branch=main)](https://travis-ci.com/MayNiklas/ansible-arch-xorg)
 
-A brief description of the role goes here.
+- installs xorg, xorg-server, xorg-apps & xorg-xinit
+- sets /etc/X11/xorg.conf.d/00-keyboard.conf to german keyboard layout
 
 Requirements
 ------------
